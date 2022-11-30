@@ -85,26 +85,18 @@ module.exports = {
       ],
     },
     extend: {
+      boxShadow: {
+          thick: "0px 7px 32px rgb(0 0 0 / 35%);",
+          superThick: "0px 64px 64px rgba(0, 0, 0, 0.15), 0px 32px 32px rgba(0, 0, 0, 0.15), 0px 16px 16px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);",
+        },
       backgroundImage: (theme) => ({
         screens: "url('/path-to/image.png')",
       }),
 
-      colors: {
-        "accent": {
-          "50": "#E5E5FF",
-          "100": "#CCCCFF",
-          "200": "#9999FF",
-          "300": "#6666FF",
-          "400": "#3333FF",
-          "500": "#0000FF",
-          "600": "#0000CC",
-          "700": "#000099",
-          "800": "#000066",
-          "900": "#000033"
-        },
-      },
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '3rem',
+        '6xl': '5rem',
       },
     },
   },

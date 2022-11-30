@@ -1,0 +1,9 @@
+@tailwind base;
+.font-display {
+    font-family: 'Clash Display', sans-serif !important;
+}
+.custom-blur {
+    backdrop-filter: blur(4px)!important;
+}
+@tailwind components;
+@tailwind utilities;

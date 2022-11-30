@@ -1,14 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import One from "../components/landing/One.astro";
+import Before from "../components/two/Before.astro";
+import After from "../components/two/After.astro";
+
 import { AstroSeo } from "@astrolib/seo";
 ---
-
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="One"
+  title="Two"
   description="Your site description goes here"
   canonical="https://www.supremeuikits.com"
   openGraph={{
@@ -42,5 +43,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <One />
+  <Before />
+  <After />
+
 </BaseLayout>
