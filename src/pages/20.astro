@@ -3,34 +3,35 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Twenty from "../components/Heroes/Twenty.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
+
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
   title="Twenty"
   description="Your site description goes here"
-  canonical="superheroes.unwrapped.design"
+  canonical="unwrapped.design"
   openGraph={{
-    url: "superheroes.unwrapped.design",
+    url: "unwrapped.design",
     title: "Open Graph Title",
     description: "Open Graph Description",
     images: [
       {
-        url: "superheroes.unwrapped.design/opengraph/social-og.jpg",
+        url: "unwrapped.design/opengraph/social-og.jpg",
         width: 1200,
         height: 630,
         alt: "Social open graph",
         type: "image/jpeg",
       },
       {
-        url: "superheroes.unwrapped.design/opengraph/twitter-og.jpg",
+        url: "unwrapped.design/opengraph/twitter-og.jpg",
         width: 4096,
         height: 4096,
         alt: "Twitter open graph",
         type: "image/jpeg",
       },
-      { url: "superheroes.unwrapped.design/opengraph/social-og.jpg" },
-      { url: "superheroes.unwrapped.design/opengraph/twitter-og.jpg" },
+      { url: "unwrapped.design/opengraph/social-og.jpg" },
+      { url: "unwrapped.design/opengraph/twitter-og.jpg" },
     ],
     site_name: "YourSitesName",
   }}
