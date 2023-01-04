@@ -1,0 +1,88 @@
+<section
+  class="bg-[#ece5db] overflow-hidden relative border-b border-[#0a3930]/5 outfit">
+  <div class="w-full mx-auto max-w-7xl relative">
+    <div
+      x-data="{ open: false }"
+      class="relative flex flex-col w-full p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+      <div
+        class="flex flex-row items-center justify-between text-[#0a3930] text-sm lg:justify-start">
+        <a href="/" class="lg:pr-8">
+          <div>
+            <p>Unwrapped</p>
+          </div>
+        </a>
+        <button
+          @click="open = !open"
+          class="inline-flex items-center justify-center p-2 text-white hover:text-[#0a3930] focus:outline-none focus:text-black lg:hidden">
+          <svg
+            class="w-6 h-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              :class="{'hidden': open, 'inline-flex': !open }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+            <path
+              :class="{'hidden': !open, 'inline-flex': open }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        :class="{'flex': open, 'hidden': !open}"
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+        <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+          <a
+            class="block px-4 py-2 mt-2 text-sm text-[#0a3930] md:mt-0 hover:text-white/50 focus:outline-none focus:shadow-outline">
+            Blog
+          </a>
+          <button
+            class="inline-flex items-center justify-center px-4 py-2 text-sm text-[#0a3930] bg-[#0a3930]/5 rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white/5 active:bg-fuchsia-50 active:text-#279f0e focus-visible:outline-fuchsia-50">
+            Sign up
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="outfit bg-[#ece5db]">
+  <div
+    class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-36">
+    <div class="mx-auto text-center">
+      <div>
+        <p
+          class="text-4xl lg:text-6xl font-extrabold tracking-tight text-[#0a3930]">
+          Help your people build <span class="lg:block"
+            >better relationships at work</span
+          >
+        </p>
+        <p
+          class="text-base text-[#0a3930]/80 max-w-2xl mx-auto mt-8 lg:text-xl">
+          Crewmap empowers HR teams to increase retention, gain insights, and
+          foster community by mapping their people’s shared interests & passions
+        </p>
+      </div>
+      <div class="flex flex-col mt-10 sm:flex-row justify-center">
+        <a
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-white duration-200 bg-[#0a3930] font-medium hover:bg-[#0a3930]/20 rounded-full hover:text-[#0a3930] focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+          href="#">Get started</a
+        >
+      </div>
+    </div>
+    <div class="relative items-center w-full pb-12 mx-auto max-w-7xl mt-12">
+      <img
+        class="w-full object-cover rounded lg:rounded-4xl"
+        src="https://cdn.dribbble.com/userupload/3268910/file/original-f861b0ec66bce539c37b8cf4e3d72ac6.jpg?compress=1&resize=2048x1536"
+        alt=""
+      />
+    </div>
+  </div>
+</section>

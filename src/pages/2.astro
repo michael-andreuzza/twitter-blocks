@@ -1,8 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Before from "../components/two/Before.astro";
-import After from "../components/two/After.astro";
-
+import Two from "../components/Heroes/Two.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
 <!---
@@ -11,28 +9,28 @@ Use AstroSeo in all the pages you want different Seo than the index page
 <AstroSeo
   title="Two"
   description="Your site description goes here"
-  canonical="https://www.supremeuikits.com"
+  canonical="superheroes.unwrapped.design"
   openGraph={{
-    url: "https://www.supremeuikits.com",
+    url: "superheroes.unwrapped.design",
     title: "Open Graph Title",
     description: "Open Graph Description",
     images: [
       {
-        url: "https://www.supremeuikits.com/opengraph/social-og.jpg",
+        url: "superheroes.unwrapped.design/opengraph/social-og.jpg",
         width: 1200,
         height: 630,
         alt: "Social open graph",
         type: "image/jpeg",
       },
       {
-        url: "https://www.supremeuikits.com/opengraph/twitter-og.jpg",
+        url: "superheroes.unwrapped.design/opengraph/twitter-og.jpg",
         width: 4096,
         height: 4096,
         alt: "Twitter open graph",
         type: "image/jpeg",
       },
-      { url: "https://www.supremeuikits.com/opengraph/social-og.jpg" },
-      { url: "https://www.supremeuikits.com/opengraph/twitter-og.jpg" },
+      { url: "superheroes.unwrapped.design/opengraph/social-og.jpg" },
+      { url: "superheroes.unwrapped.design/opengraph/twitter-og.jpg" },
     ],
     site_name: "YourSitesName",
   }}
@@ -43,7 +41,5 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <Before />
-  <After />
-
+  <Two />
 </BaseLayout>

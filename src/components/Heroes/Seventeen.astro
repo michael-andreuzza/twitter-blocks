@@ -1,0 +1,122 @@
+<section
+  class="flex flex-col items-center justify-center relative manrope"
+  style="background-image: linear-gradient(135deg, rgb(210, 210, 210),rgb(0, 0, 0)),linear-gradient(67.5deg, rgba(78, 215, 231,0.5) 0%, rgba(78, 215, 231,0.5) 3%,rgba(80, 186, 233,0.5) 3%, rgba(80, 186, 233,0.5) 17%,rgba(82, 157, 236,0.5) 17%, rgba(82, 157, 236,0.5) 21%,rgba(84, 127, 238,0.5) 21%, rgba(84, 127, 238,0.5) 42%,rgba(86, 98, 241,0.5) 42%, rgba(86, 98, 241,0.5) 74%,rgba(88, 69, 243,0.5) 74%, rgba(88, 69, 243,0.5) 100%),linear-gradient(45deg, rgb(78, 215, 231) 0%, rgb(78, 215, 231) 3%,rgb(80, 186, 233) 3%, rgb(80, 186, 233) 17%,rgb(82, 157, 236) 17%, rgb(82, 157, 236) 21%,rgb(84, 127, 238) 21%, rgb(84, 127, 238) 42%,rgb(86, 98, 241) 42%, rgb(86, 98, 241) 74%,rgb(88, 69, 243) 74%, rgb(88, 69, 243) 100%); background-blend-mode:overlay, overlay, normal;">
+  <section
+    class="w-full mx-auto max-w-7xl relative mt-6 px-5 md:px-12 lg:px-32">
+    <div class="rounded-2xl bg-white/10 backdrop-blur-2xl filter-blur">
+      <div
+        x-data="{ open: false }"
+        class="relative flex flex-col w-full p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+        <div
+          class="flex flex-row text-xl uppercase font-black tracking-tight items-center justify-between text-white lg:justify-start">
+          <a href="/" class="lg:pr-8">
+            <div>
+              <p>ProfileMe.dev</p>
+            </div>
+          </a>
+          <button
+            @click="open = !open"
+            class="inline-flex items-center justify-center p-2 text-black hover:text-[#0000ff] focus:outline-none focus:text-black lg:hidden">
+            <svg
+              class="w-6 h-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                :class="{'hidden': open, 'inline-flex': !open }"
+                class="inline-flex"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+              <path
+                :class="{'hidden': !open, 'inline-flex': open }"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col items-center flex-grow hidden md:pb-0 md:flex lg:space-x-6 md:justify-end md:flex-row">
+          <a
+            class="py-2 text-base text-white font-medium hover:text-white/70"
+            href="#">Feedback</a
+          >
+          <a
+            class="py-2 text-base text-white font-medium hover:text-white/70"
+            href="#">Changelog</a
+          >
+          <a
+            class="py-2 text-base text-white font-medium hover:text-white/70"
+            href="#">Github</a
+          >
+          <a class="py-2 text-white hover:text-[#0000ff]" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-twitter"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+              ></path>
+            </svg>
+          </a>
+        </nav><a
+          class="py-2 text-base text-white font-medium hover:text-white/70"
+          href="#">
+        </a>
+      </div><a
+        class="py-2 text-base text-white font-medium hover:text-white/70"
+        href="#">
+      </a>
+    </div>
+  </section>
+
+  <div
+    class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-32">
+    <div>
+      <div class="text-center">
+        <p
+          class="text-5xl mt-8 lg:text-6xl font-bold tracking-tighter text-white">
+          Create an amazing
+          <span class="lg:block">GitHub profile in minutes</span>
+        </p>
+        <p class="text-lg text-slate-200 max-w-xl mx-auto mt-4 lg:text-xl">
+          Show off your skills, experience and projects. Generate markdown for
+          your profile with just a few clicks!
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-3 mt-10 sm:flex-row justify-center">
+        <a
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-[#0000ff] duration-200 bg-white border-2 border-white hover:bg-white/10 hover:border-white/10 rounded-xl hover:text-white focus:outline-none lg:w-auto focus-visible:outline-[#0000ff] focus-visible:ring-[#0000ff]"
+          href="#">Create a profile</a
+        >
+        <a
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-white duration-200 hover:text-white/80 focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+          href="#">
+          See repositories &nbsp; &nbsp; &rarr;
+        </a>
+      </div>
+    </div>
+    <div
+      class="relative items-center w-full pb-12 mx-auto max-w-7xl mt-12 py-12">
+      <img
+        class="w-full rounded lg:rounded-2xl object-cover shadow-2xl relative"
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/screenshot.png"
+        alt=""
+      />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,261 @@
+<section class="bg-white/5 overflow-hidden relative neue-haas">
+  <div class="w-full mx-auto max-w-7xl relative">
+    <div
+      x-data="{ open: false }"
+      class="relative flex flex-col w-full p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+      <div
+        class="flex flex-row text-sm items-center justify-between text-black lg:justify-start">
+        <a href="/" class="lg:pr-8">
+          <div>
+            <p>Unwrapped</p>
+          </div>
+        </a>
+        <button
+          @click="open = !open"
+          class="inline-flex items-center justify-center p-2 text-black hover:text-[#0000ff] focus:outline-none focus:text-black lg:hidden">
+          <svg
+            class="w-6 h-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              :class="{'hidden': open, 'inline-flex': !open }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+            <path
+              :class="{'hidden': !open, 'inline-flex': open }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        :class="{'flex': open, 'hidden': !open}"
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex lg:space-x-6 md:justify-end md:flex-row">
+        <a
+          class="py-2 text-sm text-black font-medium hover:text-black/50"
+          href="#">Product</a
+        >
+        <a
+          class="py-2 text-sm text-black font-medium hover:text-black/50"
+          href="#">Resources</a
+        >
+
+        <a
+          class="justify-center px-6 py-2.5 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-xl group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-[#0000ff]/5 active:bg-fuchsia-50 active:text-black hover:text-[#0000ff] focus-visible:outline-fuchsia-50">
+          Pricing
+        </a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="relative flex items-center w-full bg-white neue-haas">
+  <div class="fixed inset-x-0 bottom-0 z-50">
+    <div class="bg-indigo-50">
+      <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-16">
+        <div class="flex flex-wrap items-center justify-between">
+          <div class="flex w-0 flex-1 items-center">
+            <p class="truncate font-medium text-indigo-500">
+              <span class="md:hidden">LeadDelta for Teams coming soon</span>
+              <span class="hidden md:inline"
+                >LeadDelta for Teams coming soon. Get on the waitlist and be the
+                first one to get onboarded
+              </span>
+            </p>
+          </div>
+          <div
+            class="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
+            <a
+              href="#"
+              class="flex items-center justify-center rounded-xl border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50"
+              >Learn more</a
+            >
+          </div>
+          <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
+            <button
+              type="button"
+              class="-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:-mr-2">
+              <span class="sr-only">Dismiss</span>
+              <!-- Heroicon name: outline/x-mark -->
+              <svg
+                class="h-6 w-6 text-indigo-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-36">
+    <div class="relative flex-col items-start m-auto align-middle">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+        <div class="relative items-center gap-12 m-auto lg:inline-flex">
+          <div class="max-w-xl text-center lg:text-left">
+            <div>
+              <p
+                class="text-4xl lg:text-6xl font-medium text-slate-900 clash-grotesk">
+                <span class="text-indigo-500">Leading</span> Linkeding Network Manager
+              </p>
+              <p
+                class="max-w-xl mt-4 text-lg lg:text-xl tracking-tight text-slate-500">
+                Organize your LinkedIn connections the way you want. No ads, no
+                distractions.
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 mt-10 sm:flex-row items-center">
+              <a
+                class="inline-flex items-center justify-center w-full px-6 py-4 text-center text-white duration-200 bg-indigo-500 border-2 border-indigo-500 hover:bg-transparent hover:border-indigo-500 rounded-xl hover:text-indigo-500 focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+                href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-chrome"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <line x1="12" y1="9" x2="20.4" y2="9"></line>
+                  <line
+                    x1="12"
+                    y1="9"
+                    x2="20.4"
+                    y2="9"
+                    transform="rotate(120 12 12)"></line>
+                  <line
+                    x1="12"
+                    y1="9"
+                    x2="20.4"
+                    y2="9"
+                    transform="rotate(240 12 12)"></line>
+                </svg>
+                <span class="ml-3">Add to Chrome</span>
+              </a>
+              <p class="text-slate-500">
+                <span class="block">10-day free trial</span>
+                <span class="block">No credit card info required</span>
+              </p>
+            </div>
+            <div
+              class="mt-12 flex flex-col lg:flex-row gap-3 lg:divide-x-2 divide-slate-400">
+              <div>
+                <div
+                  class="flex justify-center lg:justify-start gap-3 items-center">
+                  <div class="flex gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-star fill-yellow-400 text-yellow-400 w-4 h-4"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-star fill-yellow-400 text-yellow-400 w-4 h-4"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-star fill-yellow-400 text-yellow-400 w-4 h-4"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-star fill-yellow-400 text-yellow-400 w-4 h-4"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-star fill-yellow-400 text-yellow-400 w-4 h-4"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-slate-500">Chrome store rating</span>
+                </div>
+              </div>
+              <div class="lg:pl-3">
+                <span
+                  ><strong class="text-indigo-500">6000+</strong>
+                  <span class="ml-3 text-slate-500">Satisfied users</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block w-full mt-12 lg:mt-0">
+          <img
+            class="object-cover object-center w-full mx-auto drop-shadow-xl lg:ml-auto rounded-2xl"
+            alt="hero"
+            src="https://leaddelta.com/wp-content/uploads/2022/12/home-hero.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

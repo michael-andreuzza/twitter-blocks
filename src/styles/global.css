@@ -1,9 +1,57 @@
 @tailwind base;
-.font-display {
-    font-family: 'Clash Display', sans-serif !important;
-}
-.custom-blur {
-    backdrop-filter: blur(4px)!important;
-}
 @tailwind components;
 @tailwind utilities;
+.custom-blur {
+  backdrop-filter: blur(4px) !important;
+}
+/*Displauy sans fonts*/
+.clash {
+  font-family: 'Clash Display', sans-serif !important;
+}
+.albra {
+ font-family: 'Albra', sans-serif !important;
+}
+.clash-grotesk {
+  font-family: 'Clash Grotesk', sans-serif !important;
+}
+.neue-power {
+  font-family: 'Neue Power', sans-serif;
+}
+.bogista {
+  font-family: 'Bogista', sans-serif;
+}
+.comico {
+  font-family: 'Comico', sans-serif;
+}
+/*Body serif fonts*/
+.playfair {
+ font-family: 'Playfair Display', sans-serif;
+}
+.dishcek {
+ font-family: 'Dishcek', sans-serif;
+}
+/*Body fonts*/
+.outfit {
+  font-family: 'Outfit', sans-serif;
+}
+.merriweather {
+  font-family: 'Merriweather', sans-serif;
+}
+.worksans {
+  font-family: 'Work Sans', sans-serif;
+}
+.space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.spacetext {
+  font-family: 'Space Text', sans-serif;
+}
+.neue-haas {
+  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+}
+.minebold {
+ font-family: 'Minebold', sans-serif;
+}
+.manrope {
+ font-family: 'Manrope', sans-serif;
+}
