@@ -6,6 +6,6 @@ import compress from "astro-compress";
 import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
-   site: 'https://supremeuikits.com',
-  integrations: [tailwind(), image(), compress(), partytown(), sitemap()]
+   site: 'https://unwrapped.design',
+  integrations: [tailwind(), image(), compress(), sitemap()]
 });
