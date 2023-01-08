@@ -1,0 +1,334 @@
+<section
+  class="overflow-hidden relative neue-haas"
+  style="background-image: repeating-linear-gradient(90deg, hsla(78,0%,63%,0.05) 0px, hsla(78,0%,63%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(78,0%,63%,0.05) 0px, hsla(78,0%,63%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(78,0%,63%,0.08) 0px, hsla(78,0%,63%,0.08) 1px,transparent 1px, transparent 26px),repeating-linear-gradient(90deg, hsla(78,0%,63%,0.08) 0px, hsla(78,0%,63%,0.08) 1px,transparent 1px, transparent 26px),linear-gradient(45deg, rgb(255,255,255),rgb(255,255,255));">
+  <svg
+    class="absolute -right-96 blur-3xl -top-80"
+    width="80%"
+    height="80%"
+    viewBox="0 0 400 400"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_10_20)">
+      <g filter="url(#filter0_f_10_20)">
+        <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#03FFE0"></path>
+        <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#7C87F8"
+        ></path>
+        <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#4C65E4"
+        ></path>
+        <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#6551f3"></path>
+      </g>
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_10_20"
+        x="-160.333"
+        y="-160.333"
+        width="720.666"
+        height="720.666"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"></feBlend>
+        <feGaussianBlur
+          stdDeviation="80.1666"
+          result="effect1_foregroundBlur_10_20"></feGaussianBlur>
+      </filter>
+    </defs>
+  </svg>
+  <svg
+    class="absolute left-[-30rem] blur-3xl -bottom-64"
+    width="60%"
+    height="60%"
+    viewBox="0 0 400 400"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_10_20)">
+      <g filter="url(#filter0_f_10_20)">
+        <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#03FFE0"></path>
+        <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#7C87F8"
+        ></path>
+        <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#4C65E4"
+        ></path>
+        <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#6551f3"></path>
+      </g>
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_10_20"
+        x="-160.333"
+        y="-160.333"
+        width="720.666"
+        height="720.666"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"></feBlend>
+        <feGaussianBlur
+          stdDeviation="80.1666"
+          result="effect1_foregroundBlur_10_20"></feGaussianBlur>
+      </filter>
+    </defs>
+  </svg>
+  <section class="relative">
+    <div class="w-full mx-auto max-w-7xl relative">
+      <div
+        x-data="{ open: false }"
+        class="relative flex flex-col w-full p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+        <div
+          class="flex flex-row text-sm items-center justify-between text-black lg:justify-start">
+          <a href="/" class="lg:pr-8">
+            <div>
+              <p
+                class="text-2xl uppercase italic font-semibold tracking-tighter">
+                Tweet Niche
+              </p>
+            </div>
+          </a>
+          <button
+            @click="open = !open"
+            class="inline-flex items-center justify-center p-2 text-black hover:text-indigo-500 focus:outline-none focus:text-black lg:hidden">
+            <svg
+              class="w-6 h-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                :class="{'hidden': open, 'inline-flex': !open }"
+                class="inline-flex"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+              <path
+                :class="{'hidden': !open, 'inline-flex': open }"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col items-center flex-grow hidden md:pb-0 md:flex lg:space-x-6 md:justify-end md:flex-row">
+          <a
+            class="py-2 text-base text-white font-medium hover:text-black/50"
+            href="#">Home</a
+          >
+          <a
+            class="py-2 text-base text-white font-medium hover:text-black/50 mr-auto"
+            href="#">Overview</a
+          >
+
+          <a
+            class="justify-center px-6 py-1 text-sm font-medium text-white bg-white/5 rounded-xl group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-indigo-500/5 active:bg-fuchsia-50 active:text-black hover:text-indigo-500 focus-visible:outline-fuchsia-50 ml-auto">
+            Pricing
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="flex items-center justify-center relative overflow-hidden">
+    <div
+      class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
+      <div class="mx-auto text-center">
+        <div>
+          <p
+            class="text-5xl lg:text-8xl font-extrabold tracking-tighter text-black">
+            Find the clients for <span class="lg:block"
+              >your startup on Twitter</span
+            >
+          </p>
+          <p
+            class="text-base text-[#141521]/80 max-w-md mx-auto mt-4 lg:text-2xl">
+            Targeting your customers on Twitter has never been easier
+          </p>
+          <div class="flex flex-col gap-3 mt-10 sm:flex-row justify-center">
+            <a
+              class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-white duration-200 bg-indigo-600 custom-blur font-medium hover:bg-indigo-100 hover:border-white rounded-xl hover:text-indigo-600 focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+              href="#">Find your clients now &nbsp; &nbsp; &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="mx-auto mt-12 pb-24">
+          <div class="grid w-full grid-cols-1 mx-auto lg:grid-cols-6 gap-6">
+            <div>
+              <figure class="relative max-w-md mx-auto lg:mx-0">
+                <div>
+                  <figcaption class="mt-2 text-sm">
+                    <div class="flex flex-col items-center">
+                      <div>
+                        <img
+                          class="inline-block h-16 w-16 rounded-full"
+                          src="https://pbs.twimg.com/profile_images/1605606433722081282/r4ECyqWZ_400x400.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <p class="font-semibold text-[#141521]">
+                          Dagobert Renouf
+                        </p>
+                        <p class="mt-6">
+                          <span
+                            class="bg-pink-50 text-pink-500 rounded-full py-2 px-4">
+                            Startups
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+            <div>
+              <figure class="relative max-w-md mx-auto lg:mx-0">
+                <div>
+                  <figcaption class="mt-2 text-sm">
+                    <div class="flex flex-col items-center">
+                      <div>
+                        <img
+                          class="inline-block h-16 w-16 rounded-full border-2 border-black"
+                          src="https://pbs.twimg.com/profile_images/1484538965109907461/VaQu5_PI_400x400.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <p class="font-semibold text-[#141521]">Easlo</p>
+                        <p class="mt-6">
+                          <span
+                            class="bg-indigo-50 text-indigo-600 rounded-full py-2 px-4">
+                            Notion
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+            <div>
+              <figure class="relative max-w-md mx-auto lg:mx-0">
+                <div>
+                  <figcaption class="mt-2 text-sm">
+                    <div class="flex flex-col items-center">
+                      <div>
+                        <img
+                          class="inline-block h-16 w-16 rounded-full"
+                          src="https://pbs.twimg.com/profile_images/1594999722758270976/xzMAHMBD_400x400.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <p class="font-semibold text-[#141521]">Easlo</p>
+                        <p class="mt-6">
+                          <span
+                            class="bg-cyan-50 text-cyan-500 rounded-full py-2 px-4">
+                            Notion
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+            <div>
+              <figure class="relative max-w-md mx-auto lg:mx-0">
+                <div>
+                  <figcaption class="mt-2 text-sm">
+                    <div class="flex flex-col items-center">
+                      <div>
+                        <img
+                          class="inline-block h-16 w-16 rounded-full border-2 border-black"
+                          src="https://pbs.twimg.com/profile_images/1476118697970483201/aUu84NTv_400x400.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <p class="font-semibold text-[#141521]">
+                          Luca Restagnano
+                        </p>
+                        <p class="mt-6">
+                          <span
+                            class="bg-blue-50 text-blue-500 rounded-full py-2 px-4">
+                            Indie hacking
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+            <div>
+              <figure class="relative max-w-md mx-auto lg:mx-0">
+                <div>
+                  <figcaption class="mt-2 text-sm">
+                    <div class="flex flex-col items-center">
+                      <div>
+                        <img
+                          class="inline-block h-16 w-16 rounded-full border-2 border-black"
+                          src="https://pbs.twimg.com/profile_images/1543202856559321088/zAA7wfm9_400x400.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <p class="font-semibold text-[#141521]">
+                          Ivan Karabadzhak
+                        </p>
+                        <p class="mt-6">
+                          <span
+                            class="bg-orange-50 text-orange-600 rounded-full py-2 px-4">
+                            Freelancer
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+            <div>
+              <figure class="relative max-w-md mx-auto lg:mx-0">
+                <div>
+                  <figcaption class="mt-2 text-sm">
+                    <div class="flex flex-col items-center">
+                      <div>
+                        <img
+                          class="inline-block h-16 w-16 rounded-full border-2 border-black"
+                          src="https://pbs.twimg.com/profile_images/1382124861862998016/BiLzL4HY_400x400.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <p class="font-semibold text-[#141521]">
+                          Christine Trac
+                        </p>
+                        <p class="mt-6">
+                          <span
+                            class="bg-teal-50 text-teal-500 rounded-full py-2 px-4">
+                            Writing
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

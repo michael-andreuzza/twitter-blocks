@@ -5,6 +5,9 @@
   backdrop-filter: blur(4px) !important;
 }
 /*Displauy sans fonts*/
+.bosento {
+  font-family: 'Bosento', sans-serif !important;
+}
 .clash {
   font-family: 'Clash Display', sans-serif !important;
 }
@@ -29,6 +32,10 @@
 }
 .dishcek {
  font-family: 'Dishcek', sans-serif;
+}
+.ibm-serif {
+font-family: 'IBM Plex Serif', sans-serif;
+
 }
 /*Body fonts*/
 .outfit {

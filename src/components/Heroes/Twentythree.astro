@@ -1,0 +1,210 @@
+<section
+  class="bg-[#465a52] overflow-hidden relative border-b border-[#ece5db]/5 outfit">
+  <div class="w-full mx-auto max-w-7xl relative">
+    <div
+      x-data="{ open: false }"
+      class="relative flex flex-col w-full p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+      <div
+        class="flex flex-row items-center justify-between text-[#ece5db] text-xl italic lg:justify-start">
+        <a href="/">
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="18" fill="#ece5db"></rect>
+            <g clip-path="url(#clip0_310_69)">
+              <path
+                d="M16.3851 19.145C17.0802 18.3797 17.8621 17.698 18.715 17.1137C17.7701 12.2534 14.37 9.36485 13.9223 8.99756C13.3532 9.3921 8.282 13.0412 8.0109 19.7551C7.7398 26.469 12.5005 30.5147 13.036 30.9539C12.9082 30.2735 11.8618 24.1139 16.3851 19.145Z"
+                fill="#31AD6B"></path>
+              <path
+                d="M27.8283 14.7042C27.2518 14.6511 22.8022 14.3177 18.7152 17.1138C17.8623 17.6981 17.0804 18.3798 16.3853 19.1451C11.862 24.114 12.9084 30.2736 13.0362 30.954C13.7257 31.0176 19.956 31.4821 24.4792 26.5142C29.0025 21.5463 27.9561 15.3846 27.8283 14.7042Z"
+                fill="#016930"></path>
+              <path
+                d="M18.6554 8.20816L18.6628 8.22532C18.683 8.27644 18.7042 8.32622 18.7281 8.37667L20.578 12.6789L24.848 10.9175C24.9452 10.8846 25.0403 10.8455 25.1325 10.8004L25.1379 10.7981C25.4166 10.6626 25.6659 10.4736 25.8715 10.2418C26.0772 10.01 26.2352 9.74001 26.3364 9.44718C26.4378 9.15432 26.4804 8.8444 26.4619 8.53509C26.4434 8.22577 26.3642 7.92313 26.2287 7.64444C26.0933 7.36574 25.9042 7.11646 25.6725 6.91081C25.4407 6.70517 25.1706 6.54719 24.8778 6.4459C24.585 6.34461 24.275 6.302 23.9657 6.32048C23.6564 6.33897 23.3538 6.4182 23.0751 6.55365C22.9665 6.26349 22.8018 5.99756 22.5904 5.77106C22.379 5.54455 22.1251 5.3619 21.8431 5.23353C21.5611 5.10516 21.2566 5.03358 20.947 5.02289C20.6374 5.0122 20.3286 5.0626 20.0385 5.17121C19.7483 5.27983 19.4824 5.44453 19.2559 5.65592C19.0294 5.86731 18.8467 6.12124 18.7184 6.40321C18.59 6.68519 18.5184 6.98969 18.5078 7.29932C18.4971 7.60896 18.5475 7.91767 18.6561 8.20783L18.6554 8.20816Z"
+                fill="#E73442"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_310_69">
+                <rect
+                  width="20.0466"
+                  height="26"
+                  fill="white"
+                  transform="translate(8 5)"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <button
+          @click="open = !open"
+          class="inline-flex items-center justify-center p-2 text-white hover:text-[#ece5db] focus:outline-none focus:text-black lg:hidden">
+          <svg
+            class="w-6 h-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              :class="{'hidden': open, 'inline-flex': !open }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+            <path
+              :class="{'hidden': !open, 'inline-flex': open }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        :class="{'flex': open, 'hidden': !open}"
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+        <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+          <button
+            class="inline-flex items-center justify-center p-4 text-sm text-[#ece5db] bg-[#ece5db]/5 rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white/5 active:bg-fuchsia-50 active:text-#279f0e focus-visible:outline-fuchsia-50">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>
+<section class="outfit bg-[#465a52]">
+  <div
+    class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-36">
+    <div class="mx-auto text-center">
+      <div>
+        <p class="text-4xl lg:text-6xl text-[#ece5db] bosento">
+          A worldwide community <span class="lg:block"
+            >for houseplant lovers</span
+          >
+        </p>
+        <p
+          class="text-base text-[#ece5db]/80 max-w-2xl mx-auto mt-8 lg:text-xl">
+          Have fun discovering plants you like and learn how to keep them happy
+          thanks to our guides and videos. Find similar plants and shops, and
+          share your favorites with the community.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 mt-10 sm:flex-row justify-center">
+        <a
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-[#465a52] duration-200 bg-[#ece5db] font-medium hover:bg-[#ece5db]/20 rounded-full hover:text-[#ece5db] focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+          href="#">Join us</a
+        >
+        <a
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-white duration-200 bg-[#ece5db]/5 font-medium hover:bg-[#ece5db]/20 rounded-full hover:text-[#ece5db] focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+          href="#">Discover plants &nbsp; &nbsp; &rarr;</a
+        >
+      </div>
+    </div>
+    <ul
+      class="grid grid-cols-1 gap-4 mt-6 list-none lg:gap-3 lg:grid-cols-4 lg:mt-24"
+      role="list">
+      <li>
+        <a href="/hero-2" class="hover:opacity-70 opacity-100 duration-200">
+          <div
+            class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80"
+            style="
+              border-bottom-left-radius: 15px 255px;
+              border-bottom-right-radius: 225px 15px;
+              border-top-left-radius: 255px 15px;
+              border-top-right-radius: 15px 225px;
+            ">
+            <img
+              src="https://www.chooseyourplant.com/images/plants/spathiphyllum-wallisii-1-500.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-[#ece5db] mt-3 justify-between inline-flex items-center w-full px-4">
+            <span>Low light plants</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="/hero-4" class="hover:opacity-70 opacity-100 duration-200">
+          <div
+            class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80"
+            style="
+              border-bottom-left-radius: 15px 255px;
+              border-bottom-right-radius: 225px 15px;
+              border-top-left-radius: 255px 15px;
+              border-top-right-radius: 15px 225px;
+            ">
+            <img
+              src="https://www.chooseyourplant.com/images/plants/sansevieria-trifasciata-black-coral-1-500.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-[#ece5db] mt-3 justify-between inline-flex items-center w-full px-4">
+            <span>Easy indoor plants</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/hero-5" class="hover:opacity-70 opacity-100 duration-200">
+          <div
+            class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80"
+            style="
+              border-bottom-left-radius: 15px 255px;
+              border-bottom-right-radius: 225px 15px;
+              border-top-left-radius: 255px 15px;
+              border-top-right-radius: 15px 225px;
+            ">
+            <img
+              src="https://www.chooseyourplant.com/images/plants/sansevieria-trifasciata-black-robusta-1-500.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-[#ece5db] mt-3 justify-between inline-flex items-center w-full px-4">
+            <span>Tall plants</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/hero-5" class="hover:opacity-70 opacity-100 duration-200">
+          <div
+            class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80"
+            style="
+              border-bottom-left-radius: 15px 255px;
+              border-bottom-right-radius: 225px 15px;
+              border-top-left-radius: 255px 15px;
+              border-top-right-radius: 15px 225px;
+            ">
+            <img
+              src="https://www.chooseyourplant.com/images/plants/sansevieria-trifasciata-whitney-1-500.jpg"
+              alt=""
+            />
+          </div>
+           <div
+            class="text-[#ece5db] mt-3 justify-between inline-flex items-center w-full px-4">
+            <span>Plants ta eat you whole</span>
+            <span>&rarr;</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,182 @@
+<section class="bg-[#141521]">
+  <div
+    class="w-full h-full -z-1 absolute flex flex-row justify-between left-0 lg:h-full lg:max-w-7xl lg:px-0 mx-auto px-6 right-0">
+    <div class="w-full h-full border-[#f5f5f520]/5 border-x"></div>
+    <div class="w-full h-full border-[#f5f5f520]/5 border-x"></div>
+    <div class="w-full h-full border-[#f5f5f520]/5 border-x"></div>
+    <div class="w-full h-full border-[#f5f5f520]/5 border-x"></div>
+  </div>
+  <svg
+    class="absolute sr-only -mt-64 blur-3xl ml-96"
+    width="50%"
+    height="50%"
+    viewBox="0 0 400 400"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_10_20)">
+      <g filter="url(#filter0_f_10_20)">
+        <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#03FFE0"></path>
+        <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#0a91b1"
+        ></path>
+        <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#ef5527"
+        ></path>
+        <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#ef5527 "></path>
+      </g>
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_10_20"
+        x="-160.333"
+        y="-160.333"
+        width="720.666"
+        height="720.666"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"></feBlend>
+        <feGaussianBlur
+          stdDeviation="80.1666"
+          result="effect1_foregroundBlur_10_20"></feGaussianBlur>
+      </filter>
+    </defs>
+  </svg>
+  <section class="overflow-hidden relative neue-haas">
+    <div class="w-full mx-auto max-w-7xl relative">
+      <div
+        x-data="{ open: false }"
+        class="relative flex flex-col w-full p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+        <div
+          class="flex flex-row text-sm items-center justify-between text-white lg:justify-start">
+          <a href="/" class="lg:pr-8">
+            <div>
+              <p class="font-bold uppercase">Crowd Party</p>
+            </div>
+          </a>
+          <button
+            @click="open = !open"
+            class="inline-flex items-center justify-center p-2 text-black hover:text-cyan-500 focus:outline-none focus:text-black lg:hidden">
+            <svg
+              class="w-6 h-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                :class="{'hidden': open, 'inline-flex': !open }"
+                class="inline-flex"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+              <path
+                :class="{'hidden': !open, 'inline-flex': open }"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col items-center flex-grow hidden md:pb-0 md:flex lg:space-x-6 md:justify-end md:flex-row">
+          <a
+            class="py-2 text-sm text-white/50 font-medium hover:text-white"
+            href="#">Easyraffle</a
+          >
+          <a
+            class="py-2 text-sm text-white/50 font-medium hover:text-white"
+            href="#">Zest</a
+          >
+          <a
+            class="py-2 text-sm text-white/50 font-medium hover:text-white"
+            href="#">Pricing</a
+          >
+          <a
+            class="py-2 text-sm text-white/50 font-medium hover:text-white"
+            href="#">Blog</a
+          >
+          <a
+            class="py-2 text-sm text-white/50 font-medium hover:text-white"
+            href="#">Support</a
+          >
+
+          <a
+            class="justify-center px-6 py-2 text-sm font-medium text-cyan-500 bg-cyan-400/5 rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-cyan-500/5 active:bg-fuchsia-50 active:text-black hover:text-cyan-500 focus-visible:outline-fuchsia-50">
+            Login
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section
+    class="flex items-center justify-center relative neue-haas overflow-hidden">
+    <div
+      class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-32">
+      <div class="text-center w-full h-full">
+        <div class="absolute">
+          <img
+            class="ring-2 h-24 w-24 ring-offset-4 ring-offset-black ring-white/50 rounded-full ml-16 mt-52"
+            src="https://crowdparty.app/assets/landing-faces/face-bottom-left-2.png"
+            alt=""
+          />
+        </div>
+        <div class="absolute">
+          <img
+            class="ring-2 h-24 w-24 ring-offset-4 ring-offset-black ring-white/50 rounded-full mt-12 ml-32"
+            src="https://crowdparty.app/assets/landing-faces/face-bottom-left-3.png"
+            alt=""
+          />
+        </div>
+        <div class="absolute right-0">
+          <img
+            class="ring-2 h-24 w-24 ring-offset-4 ring-offset-black ring-white/50 rounded-full right-0 mt-64 mr-24"
+            src="https://crowdparty.app/assets/landing-faces/face-top-right-1.png"
+            alt=""
+          />
+        </div>
+        <div class="absolute right-0">
+          <img
+            class="ring-2 h-24 w-24 ring-offset-4 ring-offset-black ring-white/50 rounded-full mr-48"
+            src="https://crowdparty.app/assets/landing-faces/face-top-right-2.png"
+            alt=""
+          />
+        </div>
+        <span class="bg-white/10 py-2 px-4 w-auto rounded-full">
+          <span class="text-sm text-cyan-500"> Instantly joy for events</span>
+        </span>
+        <p
+          class="text-4xl mt-8 lg:text-6xl font-extrabold tracking-tight text-white">
+          Games that delight <span class="lg:block">remotely or in-person!</span
+          >
+        </p>
+        <p class="text-base text-white/70 max-w-xl mx-auto mt-4 lg:text-xl">
+          Play over Zoom, Meet, Teams, Webex, or a smart TV
+        </p>
+        <div class="flex flex-col gap-3 mt-10 sm:flex-row justify-center">
+          <a
+            class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-white duration-200 bg-cyan-600 hover:bg-white/5 font-medium rounded-full hover:text-white focus:outline-none lg:w-auto focus-visible:outline-cyan-500 focus-visible:ring-cyan-500"
+            href="#">Start playing</a
+          >
+          <a
+            class="inline-flex items-center justify-center w-full px-6 py-3 text-center text-white duration-200 hover:text-white/80 focus:outline-none lg:w-auto focus-visible:outline-black focus-visible:ring-black"
+            href="#">
+            Join a game &nbsp; &nbsp; &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="items-center w-full pb-12 mx-auto max-w-7xl mt-12 py-12">
+        <img
+          class="w-full rounded lg:rounded-4xl relative"
+          src="https://crowdparty.app/assets/zest/friendly-fire-ss.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+</section>
