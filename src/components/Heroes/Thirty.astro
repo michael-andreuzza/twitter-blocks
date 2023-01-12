@@ -1,0 +1,151 @@
+<section>
+  <div
+    class="border-black spacetext bg-white w-full 2xl:border-2 2xl:max-w-7xl border-y-2 justify-center mx-auto sticky top-0 z-20"
+    aria-labelledby="nav"
+    id="nav">
+    <div
+      class="mx-auto 2xl:max-w-7xl w-full flex flex-col lg:flex-row lg:items-center lg:justify-between md:px-0 md:py-0 px-8 py-6 lg:divide-x-2 divide-black"
+      x-data="{ open: false }">
+      <div class="text-[#000000] items-center flex justify-between flex-row">
+        <a
+          class="text-[#000000] items-center font-bold gap-3 inline-flex px-6 lg:text-4xl text-lg tracking-tighter"
+          href="/"
+          ><span>ZLUVO.</span>
+        </a><button
+          class="border-2 border-black bg-purple-500 focus:outline-none focus:shadow-outline md:hidden ml-auto"
+          @click="open = !open"
+          ><svg
+            fill="none"
+            viewBox="0 0 24 24"
+            class="h-8 w-8"
+            stroke="currentColor"
+            ><path
+              d="M4 6h16M4 12h16M4 18h16"
+              :class="{'hidden': open, 'inline-flex': !open }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"></path><path
+              d="M6 18L18 6M6 6l12 12"
+              :class="{'hidden': !open, 'inline-flex': open }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"></path></svg
+          ></button
+        >
+      </div><nav
+        :class="{'flex': open, 'hidden': !open}"
+        class="hidden flex-col flex-grow items-center md:flex md:flex-row md:justify-end md:mt-0 m md:px-0 px-5 h-full">
+        <a
+          class="text-[#000000] text-lg bg-white font-medium duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 hover:bg-purple-500 hover:text-white inline-flex items-center justify-center md:py-8 px-6 py-2 text-center transform transition border-black lg:border-l-2 md:ml-auto"
+          href="/styleguide"
+          >Log in
+        </a><a
+          class="text-white text-lg bg-black border-black lg:border-l-2 duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 hover:bg-purple-500 hover:text-white inline-flex items-center justify-center md:py-8 px-6 py-2 text-center transform transition"
+          href="https://supreme.lemonsqueezy.com/checkout/buy/645ac44b-ee66-4368-bb58-be869569fb88"
+          ><span>Sign up</span></a
+        >
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="outift bg-[#c9bffe] spacetext">
+  <div
+    class="relative items-center w-full px-5 mx-auto md:px-12 max-w-7xl py-12">
+    <div class="mx-auto text-center">
+      <div>
+        <p class="text-4xl lg:text-7xl text-[#000000] dishcek">
+          Short Links <span class="lg:block">designed for Marketing</span>
+        </p>
+        <p
+          class="mt-4 max-w-xl mx-auto font-medium text-xl tracking-tight text-[#000000]">
+          Improve your marketing by using short links that follow a funnel
+          pattern. Send customers different places depending on past
+          interaction. Track visits and manage links in one place.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 mt-10 sm:flex-row justify-center">
+        <a
+          style="box-shadow:  8px 8px  black"
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-center transition duration-200 ease-in-out transform border-2 hover:bg-[#000000] bg-white border-black text-[#000000] rounded-xl hover:text-white focus:outline-none lg:w-auto"
+          href="#">Get Staterd now, it's free</a
+        >
+        <a
+          class="inline-flex items-center font-medium justify-center w-full px-6 py-3 text-center text-[#000000] duration-200 hover:text-fuchsia-300 focus:outline-none lg:w-auto focus-visible:outline-neutral-600 focus-visible:ring-neutral-300"
+          href="#">
+          <span>Watch the video</span>
+          &nbsp; &nbsp; &rarr;
+        </a>
+      </div>
+      <div class="mx-auto mt-6 font-medium">
+        <small>14 days for free, no credit card required</small>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="outift bg-white spacetext border-t-2 border-black">
+  <div class="relative items-center w-full mx-auto 2xlmax-w-7xl">
+    <div class="mx-auto">
+      <dl
+        class="grid grid-cols-1 text-center lg:grid-cols-4 lg:divide-x-2 divide-black">
+        <div class="p-4 lg:p-10 bg-[#f4c4cd]">
+          <div>
+            <dt>
+              <p
+                class="text-lg font-medium leading-6 text-[#000000] lg:text-2xl dishcek">
+                Begin a Campaign
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-[#000000]">
+              Provide details for your campaign so you can easily manage it in
+              the future.
+            </dd>
+          </div>
+        </div>
+        <div class="p-4 lg:p-10 bg-[#ffe3c7]">
+          <div>
+            <dt>
+              <p
+                class="text-lg font-medium leading-6 text-[#000000] lg:text-2xl dishcek">
+                Pair with a Link
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-[#000000]">
+              Use any link, like a landing page, to serve as the starting point
+              of your short link's funnel.
+            </dd>
+          </div>
+        </div>
+        <div class="p-4 lg:p-10 bg-[#c9bffe]">
+          <div>
+            <dt>
+              <p
+                class="text-lg font-medium leading-6 text-[#000000] lg:text-2xl dishcek">
+                Share Anywhere
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-[#000000]">
+              Share your campaign's short link on emails, social media, fourms,
+              or on your website itself.
+            </dd>
+          </div>
+        </div>
+        <div class="p-4 lg:p-10 bg-[#b8d4da]">
+          <div>
+            <dt>
+              <p
+                class="text-lg font-medium leading-6 text-[#000000] lg:text-2xl dishcek">
+                Visibility
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-[#000000]">
+              View all your sites, pages and page reactions.
+            </dd>
+          </div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
