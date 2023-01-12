@@ -87,6 +87,18 @@ module.exports = {
     extend: {
       colors: {
         black: '#1c1d1f',
+        "accent": {
+      50: "#EDE8FC",
+      100: "#DBD1FA",
+      200: "#BBA8F5",
+      300: "#977AF0",
+      400: "#7750EC",
+      500: "#5423E7",
+      600: "#4015C1",
+      700: "#2F108F",
+      800: "#200B61",
+      900: "#0F052E"
+    },
       },
       borderRadius: {
         '4xl': '2rem',
